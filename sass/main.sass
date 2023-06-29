@@ -1,0 +1,454 @@
+@charset "utf-8"
+@import "bourbon"
+
+*::-webkit-input-placeholder
+	color: #a6a6a6
+*:-moz-placeholder
+	color: #a6a6a6
+*::-moz-placeholder
+	color: #a6a6a6
+*:-ms-input-placeholder
+	color: #a6a6a6
+
+body input:focus,
+body textarea:focus
+	&::-webkit-input-placeholder
+		opacity: .5
+	&:-moz-placeholder
+		opacity: .5
+	&::-moz-placeholder
+		opacity: .5
+	&:-ms-input-placeholder
+		opacity: .5
+
+
+@font-face
+	font-family: "Roboto"
+	font-style: normal
+	font-weight: 400
+	font-display: swap
+	src: url(../fonts/Roboto-Regular/Roboto-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Regular/Roboto-Regular.woff) format("woff"), url(../fonts/Roboto-Regular/Roboto-Regular.ttf) format("truetype")
+
+@font-face
+	font-family: "Roboto"
+	font-style: normal
+	font-weight: 500
+	font-display: swap
+	src: url(../fonts/Roboto-Medium/Roboto-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Medium/Roboto-Medium.woff) format("woff"), url(../fonts/Roboto-Medium/Roboto-Medium.ttf) format("truetype")
+
+@font-face
+	font-family: "Roboto"
+	font-style: normal
+	font-weight: 700
+	font-display: swap
+	src: url(../fonts/Roboto-Bold/Roboto-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Bold/Roboto-Bold.woff) format("woff"), url(../fonts/Roboto-Bold/Roboto-Bold.ttf) format("truetype")
+
+@font-face
+	font-family: "sourcesanspro"
+	font-style: normal
+	font-weight: 300
+	font-display: swap
+	src: url(../fonts/sourcesansprolight/sourcesansprolight.eot?#iefix) format("embedded-opentype"), url(../fonts/sourcesansprolight/sourcesansprolight.woff) format("woff"), url(../fonts/sourcesansprolight/sourcesansprolight.ttf) format("truetype")
+
+@font-face
+	font-family: "sourcesanspro"
+	font-style: normal
+	font-weight: 400
+	font-display: swap
+	src: url(../fonts/sourcesanspro/sourcesanspro.eot?#iefix) format("embedded-opentype"), url(../fonts/sourcesanspro/sourcesanspro.woff) format("woff"), url(../fonts/sourcesanspro/sourcesanspro.ttf) format("truetype")
+
+@font-face
+	font-family: "sourcesanspro"
+	font-style: normal
+	font-weight: 600
+	font-display: swap
+	src: url(../fonts/sourcesansprosemibold/sourcesansprosemibold.eot?#iefix) format("embedded-opentype"), url(../fonts/sourcesansprosemibold/sourcesansprosemibold.woff) format("woff"), url(../fonts/sourcesansprosemibold/sourcesansprosemibold.ttf) format("truetype")
+
+@font-face
+	font-family: "sourcesanspro"
+	font-style: normal
+	font-weight: 700
+	font-display: swap
+	src: url(../fonts/sourcesansprobold/sourcesansprobold.eot?#iefix) format("embedded-opentype"), url(../fonts/sourcesansprobold/sourcesansprobold.woff) format("woff"), url(../fonts/sourcesansprobold/sourcesansprobold.ttf) format("truetype")
+
+
+h1
+	color: #fff
+	font-size: 72px
+	line-height: 80px
+	font-weight: 300
+	position: relative
+	margin-bottom: 15px
+	font-family: "sourcesanspro"
+	text-transform: uppercase
+
+h2
+	color: #000b28
+	font-size: 48px
+	line-height: 52.8px
+	font-weight: 300
+	position: relative
+	font-family: "sourcesanspro"
+	text-transform: uppercase
+	b
+		font-weight: 700
+		color: #01ae9a
+
+h3
+	color: #000b28
+	font-size: 30px
+	line-height: 33px
+	font-weight: 300
+	position: relative
+	font-family: "sourcesanspro"
+	text-transform: uppercase
+	margin-bottom: 10px
+	b
+		font-weight: 700
+		color: #01ae9a
+
+
+
+
+
+
+
+
+footer
+	padding: 30px 0
+	background-color: #000b28
+	.section_content
+		display: flex
+		align-items: center
+		justify-content: space-between
+		.footer_contacts
+			display: flex
+			.contact_item
+				padding-left: 40px
+				color: #fff
+				margin: 0 40px
+				position: relative
+				a
+					color: #fff
+				.icon_wrap
+					position: absolute
+					top: 50%
+					margin-top: -12px
+					left: 0
+					color: #01ae9a
+					font-size: 20px
+				.title
+					color: #bdbdbd
+					font-size: 12px
+					font-weight: 500
+					line-height: 21px
+
+
+/* Slider */
+
+.slick-slider
+	position: relative
+	display: block
+	box-sizing: border-box
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-webkit-touch-callout: none
+	-khtml-user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+
+
+.slick-list
+	position: relative
+	display: block
+	overflow: hidden
+	margin: 0
+	padding: 0
+	&:focus
+		outline: none
+	&.dragging
+		cursor: pointer
+		cursor: hand
+
+.slick-slider
+	.slick-track, .slick-list
+		-webkit-transform: translate3d(0, 0, 0)
+		-moz-transform: translate3d(0, 0, 0)
+		-ms-transform: translate3d(0, 0, 0)
+		-o-transform: translate3d(0, 0, 0)
+		transform: translate3d(0, 0, 0)
+
+.slick-track
+	position: relative
+	top: 0
+	left: 0
+	display: block
+	&:before
+		display: table
+		content: ''
+	&:after
+		display: table
+		content: ''
+		clear: both
+
+.slick-loading .slick-track
+	visibility: hidden
+
+.slick-slide
+	display: none
+	float: left
+	height: 100%
+	min-height: 1px
+
+.slick-slide
+	img
+		display: block
+	&.slick-loading img
+		display: none
+	&.dragging img
+		pointer-events: none
+
+.slick-initialized .slick-slide
+	display: block
+
+.slick-loading .slick-slide
+	visibility: hidden
+
+.slick-vertical .slick-slide
+	display: block
+	height: auto
+	border: 1px solid transparent
+
+.slick-arrow.slick-hidden
+	display: none
+
+html.remodal-is-locked
+	overflow: hidden
+	touch-action: none
+
+.remodal, [data-remodal-id]
+	display: none
+
+.remodal-overlay
+	position: fixed
+	z-index: 9999
+	top: -5000px
+	right: -5000px
+	bottom: -5000px
+	left: -5000px
+	display: none
+
+.remodal-wrapper
+	position: fixed
+	z-index: 10000
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	display: none
+	overflow: auto
+	text-align: center
+	-webkit-overflow-scrolling: touch
+	&:after
+		display: inline-block
+		height: 100%
+		margin-left: -0.05em
+		content: ""
+
+.remodal-overlay, .remodal-wrapper
+	backface-visibility: hidden
+
+.remodal
+	position: relative
+	outline: none
+	text-size-adjust: 100%
+
+.remodal-is-initialized
+	display: inline-block
+
+.remodal-bg
+	&.remodal-is-opening, &.remodal-is-opened
+		filter: blur(3px)
+
+.remodal-overlay
+	background-color: #000b28
+	&.remodal-is-opening, &.remodal-is-closing
+		animation-duration: 0.3s
+		animation-fill-mode: forwards
+	&.remodal-is-opening
+		animation-name: remodal-overlay-opening-keyframes
+	&.remodal-is-closing
+		animation-name: remodal-overlay-closing-keyframes
+
+.remodal-wrapper
+	padding: 10px 10px 0
+
+.remodal
+	box-sizing: border-box
+	max-width: 100%
+	transform: translate3d(0, 0, 0)
+	width: 550px
+	padding: 0px
+	background-color: #fff
+	position: relative
+	&#modal-politic
+		width: 1000px
+		.modal-title
+			padding-bottom: 15px
+			margin-bottom: 35px
+			border-bottom: 1px solid #e5e5e5
+
+.remodal
+	&.remodal-is-opening, &.remodal-is-closing
+		animation-duration: 0.3s
+		animation-fill-mode: forwards
+	&.remodal-is-opening
+		animation-name: remodal-opening-keyframes
+	&.remodal-is-closing
+		animation-name: remodal-closing-keyframes
+	vertical-align: middle
+
+.remodal-wrapper:after
+	vertical-align: middle
+
+.remodal-close
+	position: absolute
+	top: 15px
+	right: 15px
+	width: 36px
+	height: 36px
+	text-align: center
+	transition: .5s
+	font-size: 18px
+	line-height: 36px
+	-webkit-appearance: none
+	padding: 0
+	z-index: 1
+	color: #000b28
+	cursor: pointer
+	border: 0
+	font-weight: 900
+	border-radius: 50%
+	background-color: #f5f5f5
+	&:hover, &:focus
+		opacity: 1
+
+.modal-content
+	width: 100%
+	margin: auto
+	-webkit-background-clip: padding-box
+	background-clip: padding-box
+	outline: 0
+
+.form_title
+	color: #01ae9a
+	font-size: 36px
+	font-weight: 700
+	font-family: "sourcesanspro"
+	text-transform: uppercase
+	line-height: 39.6px
+	margin-bottom: 5px
+
+#modal_thank
+	.modal_content
+		.center_wrap
+			margin-bottom: 0
+			&:before
+				content: initial
+body
+	.remodal-wrapper
+		.remodal
+			.modal_content
+				position: relative
+				padding: 50px 90px
+				.center_wrap
+					text-align: center
+					margin-bottom: 60px
+					position: relative
+					&:before
+						content: ''
+						position: absolute
+						width: 100px
+						height: 4px
+						left: 50%
+						bottom: -20px
+						margin-left: -50px
+						border-radius: 3px
+						background-color: #01ae9a
+					.desc
+						line-height: 17.6px
+						font-family: "sourcesanspro"
+						font-weight: 400
+					.thank_icon
+						margin-bottom: 25px
+					.go_to_home
+						margin-top: 35px
+						display: inline-block
+						color: #000b28
+						font-size: 16px
+						font-weight: 500
+						text-transform: uppercase
+				form
+					input, textarea
+						width: 100%
+						border-radius: 5px
+						border: 1px solid #e5e5e5
+						background-color: #f5f5f5
+						margin-bottom: 15px
+						font-family: inherit
+						padding: 16px 25px
+						line-height: 20px
+					.btn_style_wrap
+						text-align: center
+						.btn_style
+							width: auto
+							background-color: #01ae9a
+							margin-bottom: 0
+							min-width: 280px
+
+
+
+@keyframes remodal-opening-keyframes
+	from
+		transform: scale(1.05)
+		opacity: 0
+
+	to
+		transform: none
+		opacity: 1
+		filter: blur(0)
+
+
+@keyframes remodal-closing-keyframes
+	from
+		transform: scale(1)
+		opacity: 1
+
+	to
+		transform: scale(0.95)
+		opacity: 0
+		filter: blur(0)
+
+
+@keyframes remodal-overlay-opening-keyframes
+	from
+		opacity: 0
+
+	to
+		opacity: 1
+
+
+@keyframes remodal-overlay-closing-keyframes
+	from
+		opacity: 1
+
+	to
+		opacity: 0
+
+
+
+//ALWAYS END
+@import "media"
