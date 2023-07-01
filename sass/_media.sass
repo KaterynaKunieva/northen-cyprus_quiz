@@ -1,45 +1,243 @@
-@import "bourbon"
 
 /*==========	Desktop First Method	==========*/
 
-@media only screen and (max-width: 1600px)
-	/* */
+@media only screen and (max-width: 1100px)
+	// MAIN
+	.container
+		padding: 0px 29px !important 
+	.logo, .logo_wrap
+		height: 96px !important
+		width: 126px !important
+	.logo_wrap
+		margin-top: 37px !important
+	.main
+		padding: 245px 100px 83px 35px 
+	.main__content
+		height: calc( 100vh - 328px )
+	.title
+		font-size: 56px
+		max-width: 525px
+	.desc
+		font-size: 31px
+		max-width: 575px
+		margin-top: 35px
+	.btn, .btn_wrap
+		width: 489px
+		height: 78px
+		font-size: 34px
+		letter-spacing: 0.04em
+	.btn_wrap
+		padding-left: 30px
+	.bg_waves
+		display: block 
+		position: absolute 
+	.waves_top
+		right: 0
+		top: 0 
+		height: 27%
+	.waves_bottom
+		left: 0
+		bottom: 0    
+		height:40%
+	
+	// QUIZ
+	.quiz 
+		padding: 150px 10px 83px 10px  
+		.main__content
+			height: calc(100vh - 260px)!important
+			margin: 13px auto 0px !important
+		.btn_wrap
+			padding: 0 !important
+			margin-top: 16px
+	.title_question
+		font-size: 45px
+		max-width: 600px
+		height: 90px
+	.select_cards
+		flex-wrap: wrap
+		height: auto
+		margin-top: 19px
+	.card_item
+		width: calc( 50% - 16px ) 
+		aspect-ratio: 318/383
+		margin: 10px 16px
+		border: 3px solid $card_border
+		&:nth-child(2n+1) 
+			margin-left: 0
+		&:nth-child(2n)
+			margin-right: 0  
+		p 
+			font-size: 22px
+		.bigger 
+			font-size: 26px !important
+	.card_logo 
+		img 
+			max-height: 128px 
+			max-width: 175px 
+	.btn_select, .btn_wrap
+		font-size: 41px
+		width: 489px
+		height: 78px  
 
-@media only screen and (max-width: 1400px)
-	/* */
+	// FORM 
+	.form_title
+		font-size: 45px !important   
+		width: 645px
+		max-width: 645px
+	.form 
+		width: 645px
+		padding: 90px 70px 135px 90px
+		border: 3px solid $card_border
+		input, input:focus  
+			width: 479px 
+			&[type="text"]
+				border: 2px solid $input_border !important
+				height: 75px
+				font-size: 31px
+				line-height: 103px
+				margin: 26px 0px
+		.btn_wrap
+			position: absolute
+			top: calc(100vh - 560px)
+			left: 8%
+			width: 489px
+			height: 78px
+	.wrap_form 
+		padding-top: 100px!important
+	.btn_send
+		width: 489px !important
+		height: 78px
+		font-size: 34px
+		letter-spacing: 0.04em
+		text-transform: uppercase
 
+@media only screen and (max-width: 750px)
+	// MAIN
+	.container
+		padding: 0px 19px !important
+	header
+		height: 86px !important
+	.logo, .logo_wrap
+		height: 61px !important
+		width: 83px !important
+	.logo_wrap
+		margin-top: 25px !important
+	.main
+		padding: 157px 45px 53px 20px  
+	.main__content
+		height: calc( 100vh - 210px )
+	.title
+		font-size: 36px
+		max-width: 330px 
+	.desc
+		font-size: 20px
+		max-width: 370px 
+		margin-top: 14px
+	.btn, .btn_wrap
+		width: 313px 
+		height: 50px
+		font-size: 22px 
+	.btn_wrap
+		padding-left: 24px
 
-@media only screen and (max-width: 1200px)
-	/* */
-
-@media only screen and (max-width: 992px)
-	/* */
-
-
-
-@media only screen and (max-width: 767px)
-	/* */
-
+	// QUIZ
+	.quiz 
+		padding: 87px 6px 53px 7px
+		.main__content
+			height: calc(100vh - 160px) !important
+		.btn_wrap
+			padding: 0 !important
+			margin-top: 16px
+	.title_question
+		font-size: 29px
+		max-width: 390px
+		height: 60px
+	.select_cards 
+		margin-top: 10px
+	.card_item
+		width: calc( 50% - 10px )  
+		margin: 7px 10px 
+		border: 2px solid $card_border
+		&:nth-child(2n+1) 
+			margin-left: 0
+		&:nth-child(2n)
+			margin-right: 0 
+		p 
+			font-size: 17px 
+		.bigger 
+			font-size: 14px !important 
+	.card_logo 
+		img 
+			max-height: 83px
+			max-width: 111px
+	.btn_select, .btn_wrap
+		font-size: 26px
+		width: 312px
+		height: 50px 
+			
+	
 @media only screen and (max-width: 480px)
-	/* */
+	// MAIN
+	.container
+		padding: 0 15px!important
+	header
+		height: 57px !important
+	.logo, .logo_wrap
+		height: 41px !important
+		width: 55px !important
+	.logo_wrap
+		margin-top: 16px !important
+	.main
+		padding: 104px 40px 33px 14px  
+	.main__content
+		height: calc( 100vh - 139px )
+	.title
+		font-size: 24px
+		max-width: 225px 
+	.desc
+		font-size: 13px
+		max-width: 250px 
+		margin-top: 13px
+		line-height: 1.2
+	.btn, .btn_wrap
+		width: 208px 
+		height: 33px
+		font-size: 14px 
+	.btn_wrap
+		padding-left: 13px
 
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 360px)
-	/* */
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px)
-	.visible-xs
-		display: none !important
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px)
-	.visible-sm
-		display: none !important
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px)
-	/**/
-
+	// QUIZ
+	.quiz 
+		padding: 50px 3px 35px
+		.main__content
+			height: calc(100vh - 108px)!important
+		.btn_wrap
+			padding: 0 !important 
+			margin-top: 0 !important 
+	.title_question
+		font-size: 19px
+		max-width: 260px
+		height: 40px
+	.select_cards 
+		margin-top: 0px
+	.card_item
+		width: calc( 50% - 6px )  
+		margin: 5px 6px 
+		border: 1px solid $card_border
+		&:nth-child(2n+1) 
+			margin-left: 0
+		&:nth-child(2n)
+			margin-right: 0 
+		p 
+			font-size: 9px 
+		.bigger 
+			font-size: 9px !important 
+	.card_logo 
+		img 
+			max-height: 56px
+			max-width: 75px
+	.btn_select, .btn_wrap
+		font-size: 26px
+		width: 208px
+		height: 33px 
+		font-size: 17px
