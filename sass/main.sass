@@ -162,8 +162,10 @@
 	max-width: 515px
 	width: 515px
 	font-size: 36px !important
+.wrap_form
+	margin-top: 0
 .form
-	margin: 35px auto 0px 
+	margin: 29px auto 0
 	padding: 55px 62px 61px
 	width: 515px
 	background-color: transparent 
@@ -187,7 +189,8 @@
 			&::placeholder
 				color: $input_text
 	.btn_wrap 
-		margin: 49px 20px 0
+		display: block
+		margin: 35px 20px 0
 	&::after
 		content: ""
 		display: block
@@ -211,7 +214,34 @@
 
 // FINISH 
 .title_finish
-	width: 470px
-	text-align: center
+	width: 420px
+	text-align: center  
+	font-size: 34px
+	color: $white
+	margin: 45px auto 52px
+.socials
+	padding: 65px 10px 20px
+	border: 7px solid $card_border
+	width: 472px
+	position: relative
+	p
+		font-size: 22px
+		color: $white
+		text-align: center
+.social_items
+	display: flex
+	flex-direction: row 
+	justify-content: center  
+	margin-bottom: 37px
+	a
+		margin: 0 11px
+		width: 88px
+		height: 89px
+		img 
+			width: 100% 
+		&:first-child
+			margin-left: 0
+		&:last-child
+			margin-right: 0
 //ALWAYS END
 @import "media"

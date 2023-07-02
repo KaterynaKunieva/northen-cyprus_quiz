@@ -106,7 +106,7 @@
       <a href="#" class="btn_wrap"><button class="btn btn_select">выбрать</button></a>
     </div>
   </div>
-  <!-- <div class="container wrap_question">
+  <div class="container wrap_question wrap_form">
     <div class="title form_title">оставьте пожалуйста
       свой контакт</div>
     <div class="form">
@@ -117,12 +117,25 @@
         <input type="button" class="btn btn_send" value="готово">
       </a>
     </div>
-  </div> -->
+  </div>
 
-  <!-- <div class="container wrap_form">
-    <div class="title title_finish">Мы с Вами свяжемся
-      в ближайшее время! </div>
-  </div> -->
+  <div class="container wrap_question">
+    <div class="title title_finish">
+      Мы с Вами свяжемся в ближайшее время!
+    </div>
+    <div class="form socials">
+      <div class="social_items">
+        <a href="#"><img src="img/socials/1.png" alt="facebook"></a>
+        <a href="#"><img src="img/socials/2.png" alt="instagram"></a>
+        <a href="#"><img src="img/socials/3.png" alt="telegram"></a>
+      </div>
+      <p>
+        Подписывайтесь на нас в социальных сетях,
+        чтобы узнать больше информации
+        о недвижимости на Северном Кипре!
+      </p>
+    </div>
+  </div>
 </div>
 
 <?php include_once('footer.php') ?>
